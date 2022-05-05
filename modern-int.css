@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #181719;
+  color: #ffffff;
+  --crimson: "Crimson Pro", serif;
+  --lora: "Lora", serif;
+  --montserrat: "Montserrat", sans-serif;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  margin-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .company-name {
+  width: max-content;
+  text-transform: uppercase;
+  font-family: var(--crimson);
+  border: 1px solid #ffffff;
+}
+
+.company-name > h5 {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  column-gap: 4vw;
+}
+
+nav > ul > li {
+  background-image: linear-gradient(
+    transparent 0%,
+    transparent 90%,
+    #d1cb82 90%,
+    #c4b650 95%,
+    #796609 100%
+  );
+  background-size: 2% 100%;
+  background-repeat: no-repeat;
+  font-family: var(--montserrat);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-size ease-in-out 300ms;
+}
+
+nav > ul > li:hover {
+  background-size: 100% 100%;
+}
+
+.main-body {
+  width: 90%;
+  margin: auto;
+  margin-top: 14vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-body > .flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexbox > .left-side {
+  width: fit-content;
+}
+
+.left-side > h3 {
+  margin-bottom: 5vh;
+  font-family: var(--lora);
+}
+
+.left-side > h3 ~ div {
+  width: 28.4vw;
+  font-family: var(--montserrat);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.left-side > .about > p {
+  width: 28.47vw;
+  margin-bottom: 7vh;
+}
+
+.left-side > .read-more {
+  font-family: var(--montserrat);
+  font-size: 18x;
+  font-weight: 700;
+}
+
+.flexbox > .right-side {
+  background: url(images/photo1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 51.18vw;
+  height: 51.42vh;
+}
+
+.right-side > .post {
+  background: #181719;
+  width: 28.4vw;
+  top: 85.49%;
+  right: auto;
+  bottom: auto;
+  left: 40%;
+  position: absolute;
+}
+
+.post > .flexbox {
+  display: flex;
+  align-items: center;
+  margin-left: 3.41%;
+  margin-bottom: 11px;
+  position: relative;
+}
+
+.post > p {
+  width: 67%;
+  margin-left: 7.8%;
+  font-family: var(--lora);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.flexbox > .profile-pic {
+  background: url(images/photo2.png);
+  background-size: 58.82%;
+  background-position: center;
+  clip-path: circle(25px);
+  width: 85px;
+  height: 72px;
+}
+
+.flexbox > .profile-pic ~ .profile-info {
+  display: flex;
+  position: relative;
+  height: 40px;
+  width: 150px;
+}
+
+.profile-info > h6 {
+  align-self: flex-start;
+  font-family: var(--montserrat);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-info > .role {
+  position: absolute;
+  bottom: 0;
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* @media screen and (max-width: 1152px) {
+  .main-body > .flexbox {
+    flex-direction: column;
+    align-items: unset;
+  }
+} */
